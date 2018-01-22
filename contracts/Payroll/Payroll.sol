@@ -1,5 +1,6 @@
 pragma solidity ^0.4.18;
 
+import "./PayrollInterface.sol";
 import "../DateTime/DateTimeInterface.sol";
 import "../Token/ERC223ReceivingContract.sol";
 import "../Token/EIP20.sol";
@@ -7,7 +8,7 @@ import "zeppelin-solidity/contracts/ownership/Ownable.sol";
 
 /// @title Payroll
 /// @dev Smart contract to pay employees
-contract Payroll is Ownable, ERC223ReceivingContract {
+contract Payroll is PayrollInterface, Ownable, ERC223ReceivingContract {
     /*
      * Events
      */
