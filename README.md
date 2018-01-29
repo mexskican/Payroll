@@ -1,5 +1,5 @@
 # Payroll
-Payroll project for the Status [inclusion activity](https://wiki.status.im/Hiring_Process).
+Payroll smart contract.
 ## Interface
 ```
 contract PayrollInterface {
